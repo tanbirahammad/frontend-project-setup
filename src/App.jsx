@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+import MainLayout from "./components/Layout/MainLayout";
 
 
 
@@ -6,7 +8,9 @@ function App() {
 
   return (
     <>
-      <button className="btn btn-primary">Primary</button>
+      <MainLayout>
+        <Outlet/>
+      </MainLayout>
     </>
   )
 }
